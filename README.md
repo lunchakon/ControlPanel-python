@@ -33,7 +33,27 @@ Integrate with external APIs to fetch data or services.
 Use websockets to provide real-time updates to the UI.
 
 ## Prerequisites
+Python : https://www.python.org/downloads/ 
+Docker Compose (YAML): https://www.docker.com/products/docker-desktop/
+Streamlit library : '''pip install streamlit'''
 
-Python https://www.python.org/downloads/ 
-Docker https://www.docker.com/products/docker-desktop/
-Streamlit library : """pip install streamlit"""
+## Project Structure :
+control-panel-web-app/
+├── Dockerfile
+├── requirements.txt
+├── app.py
+└── scripts/
+    ├── timezone_checker.py
+    └── password_generator.py
+
+## Creating a Python Virtual Environment
+
+Install virtualenv: '''pip install virtualenv'''
+
+Create a Virtual Environment: '''virtualenv venv'''
+
+Activate the Virtual Environment: '''source venv/bin/activate'''
+
+Install Dependencies: '''pip install streamlit docker pytz'''
+
+To deactivate the virtual environment:  '''deactivate'''
