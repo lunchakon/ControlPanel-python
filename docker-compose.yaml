@@ -1,9 +1,7 @@
-version: '3.8'
-
 services:
   web:
-    build: . 
+    build: .
     ports:
-      - "9501:9501"
+      - "8501:8501"
     volumes:
-      - ./data:/controlpanel-python/data      
+      - .:/usr/src/controlpanel-python

@@ -18,6 +18,8 @@ def get_public_ip():
 if __name__ == "__main__":
     public_ip = get_public_ip()
     if public_ip:
-        print(f"Your public IP address is: {public_ip}")
+        print(f"Your public IP address is: {public_ip} ")
+        response2 = requests.get("https://ifconfig.me").text
+        print(" IP ",response2)
     else:
         print("Failed to retrieve public IP address.")
